@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d3932f3-3be5-4e24-abe2-e23abcf8cfd0" name="Changes" comment="프록시 팩토리 적용">
-      <change afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v4_postprocessor/BeanPostProcessorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v4_postprocessor/PackageLogTracePostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v5_autoproxy/AutoProxyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v6_aop/AopConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v6_aop/aspect/LogTraceAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/src/test/java/hello/proxy/postprocessor/BasicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy/src/test/java/hello/proxy/postprocessor/BeanPostProcessorTest.java" afterDir="false" />
+    <list default="true" id="9d3932f3-3be5-4e24-abe2-e23abcf8cfd0" name="Changes" comment="BeanPostProcessor, @Aspect">
+      <change afterPath="$PROJECT_DIR$/aop/src/main/java/hello/aop/order/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aop/src/main/java/hello/aop/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aop/src/test/java/hello/aop/AopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/ProxyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/ProxyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v3_proxyfactory/LogTraceAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/src/main/java/hello/proxy/config/v3_proxyfactory/LogTraceAdvice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +23,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/advanced">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/aop">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/proxy">
@@ -89,77 +86,81 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.AdvisorTest.advisorTest1.executor": "Run",
-    "Gradle.AdvisorTest.advisorTest2.executor": "Run",
-    "Gradle.AdvisorTest.advisorTest3.executor": "Run",
-    "Gradle.BasicTest.basicConfig.executor": "Run",
-    "Gradle.BeanPostProcessorTest.basicConfig.executor": "Run",
-    "Gradle.Build advanced.executor": "Run",
-    "Gradle.Build proxy.executor": "Run",
-    "Gradle.C:/Users/cas/IdeaProjects/Spring/proxy-start/build.gradle.executor": "Run",
-    "Gradle.CglibTest.cglib.executor": "Run",
-    "Gradle.ConcreteProxyTest.addProxy.executor": "Run",
-    "Gradle.ConcreteProxyTest.noProxy.executor": "Run",
-    "Gradle.DecoratorPatternClient.noDecorator.executor": "Run",
-    "Gradle.DecoratorPatternTest.decorator1.executor": "Run",
-    "Gradle.DecoratorPatternTest.decorator2.executor": "Run",
-    "Gradle.DecoratorPatternTest.decorator3.executor": "Run",
-    "Gradle.DecoratorPatternTest.executor": "Run",
-    "Gradle.DecoratorPatternTest.noDecorator.executor": "Run",
-    "Gradle.HelloTrace2Test.begin_end.executor": "Run",
-    "Gradle.HelloTrace2Test.executor": "Run",
-    "Gradle.JdkDynamicProxyTest.dynamicA.executor": "Run",
-    "Gradle.JdkDynamicProxyTest.dynamicB.executor": "Run",
-    "Gradle.JdkDynamicProxyTest.executor": "Run",
-    "Gradle.MultiAdvisorTest.multiAdvisorTest1.executor": "Run",
-    "Gradle.MultiAdvisorTest.multiAdvisorTest2.executor": "Run",
-    "Gradle.ProxyApplicationTests.contextLoads.executor": "Run",
-    "Gradle.ProxyFactoryTest.concreteProxy.executor": "Run",
-    "Gradle.ProxyFactoryTest.interfaceProxy.executor": "Run",
-    "Gradle.ProxyFactoryTest.proxyTargetClass.executor": "Run",
-    "Gradle.ProxyPatternTest.cacheProxyTest.executor": "Run",
-    "Gradle.ProxyPatternTest.executor": "Run",
-    "Gradle.ProxyPatternTest.noProxyTest.executor": "Run",
-    "Gradle.ReflectionTest.reflection0.executor": "Run",
-    "Gradle.ReflectionTest.reflection1.executor": "Run",
-    "Gradle.ReflectionTest.reflection2.executor": "Run",
-    "Gradle.advanced [build].executor": "Run",
-    "Gradle.advanced [clean].executor": "Run",
-    "Gradle.advanced [testClasses].executor": "Run",
-    "JUnit.ContextV1Test.strategyV0.executor": "Run",
-    "JUnit.ContextV1Test.strategyV1.executor": "Run",
-    "JUnit.ContextV2Test.strategyV2.executor": "Run",
-    "JUnit.ContextV2Test.strategyV3.executor": "Run",
-    "JUnit.TemplateCallbackTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AdvancedApplication (1).executor": "Run",
-    "Spring Boot.AdvancedApplication.executor": "Run",
-    "Spring Boot.ProxyApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/spring-study/proxy/src/test/java/hello/proxy/jdkdynamic/code",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AdvisorTest.advisorTest1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdvisorTest.advisorTest2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdvisorTest.advisorTest3.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BasicTest.basicConfig.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BeanPostProcessorTest.basicConfig.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build advanced.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build aop.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build proxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.C:/Users/cas/IdeaProjects/Spring/proxy-start/build.gradle.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CglibTest.cglib.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConcreteProxyTest.addProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConcreteProxyTest.noProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DecoratorPatternClient.noDecorator.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DecoratorPatternTest.decorator1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DecoratorPatternTest.decorator2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DecoratorPatternTest.decorator3.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DecoratorPatternTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DecoratorPatternTest.noDecorator.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HelloTrace2Test.begin_end.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HelloTrace2Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JdkDynamicProxyTest.dynamicA.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JdkDynamicProxyTest.dynamicB.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JdkDynamicProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MultiAdvisorTest.multiAdvisorTest1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MultiAdvisorTest.multiAdvisorTest2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyFactoryTest.concreteProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyFactoryTest.interfaceProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyFactoryTest.proxyTargetClass.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyPatternTest.cacheProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyPatternTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyPatternTest.noProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionTest.reflection0.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionTest.reflection1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionTest.reflection2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advanced [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advanced [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.advanced [testClasses].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextV1Test.strategyV0.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextV1Test.strategyV1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextV2Test.strategyV2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextV2Test.strategyV3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TemplateCallbackTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AdvancedApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AdvancedApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AopApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProxyApplication.executor&quot;: &quot;Run&quot;,
+    &quot;StatusDashboardGroupingRule&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/builder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\spring-study\proxy\src\test\java\hello\proxy\jdkdynamic\code" />
@@ -188,7 +189,31 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProxyApplication">
+  <component name="RunManager" selected="Spring Boot.AopApplication">
+    <configuration name="AopTest.aopInfo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/aop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;hello.aop.AopTest.aopInfo&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="BasicTest.basicConfig" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -227,30 +252,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;hello.proxy.postprocessor.BeanPostProcessorTest.basicConfig&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MultiAdvisorTest.multiAdvisorTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/proxy" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;hello.proxy.advisor.MultiAdvisorTest.multiAdvisorTest1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -305,6 +306,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="aop.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.aop.AopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="hello.proxy.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="hello.proxy.ProxyApplication" />
@@ -319,20 +327,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.AopTest.aopInfo" />
       <item itemvalue="Gradle.BasicTest.basicConfig" />
       <item itemvalue="Gradle.BeanPostProcessorTest.basicConfig" />
-      <item itemvalue="Gradle.MultiAdvisorTest.multiAdvisorTest1" />
       <item itemvalue="Gradle.MultiAdvisorTest.multiAdvisorTest2" />
+      <item itemvalue="Spring Boot.AopApplication" />
       <item itemvalue="Spring Boot.AdvancedApplication" />
       <item itemvalue="Spring Boot.ProxyApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AopTest.aopInfo" />
         <item itemvalue="Spring Boot.ProxyApplication" />
         <item itemvalue="Gradle.BeanPostProcessorTest.basicConfig" />
         <item itemvalue="Gradle.BasicTest.basicConfig" />
         <item itemvalue="Gradle.MultiAdvisorTest.multiAdvisorTest2" />
-        <item itemvalue="Gradle.MultiAdvisorTest.multiAdvisorTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +371,7 @@
       <workItem from="1735444479761" duration="50000" />
       <workItem from="1735444766935" duration="1949000" />
       <workItem from="1735446756903" duration="25136000" />
-      <workItem from="1735644188412" duration="21253000" />
+      <workItem from="1735644188412" duration="24347000" />
     </task>
     <task id="LOCAL-00001" summary="[Design Pattern] Strategy">
       <option name="closed" value="true" />
@@ -444,7 +453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735696263094</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="BeanPostProcessor, @Aspect">
+      <option name="closed" value="true" />
+      <created>1735717737978</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735717737978</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,6 +500,7 @@
     <MESSAGE value="리플렉션, JDK 동적 프록시, Cglib" />
     <MESSAGE value="프록시 팩토리" />
     <MESSAGE value="프록시 팩토리 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="프록시 팩토리 적용" />
+    <MESSAGE value="BeanPostProcessor, @Aspect" />
+    <option name="LAST_COMMIT_MESSAGE" value="BeanPostProcessor, @Aspect" />
   </component>
 </project>
